@@ -16,9 +16,13 @@
   font-style: normal;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-/* IE10+ CSS styles go here */
-}
+.html {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+ }
 
 *,
 *:before,
@@ -29,6 +33,9 @@
 	outline: none;
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 body, a, h1, h2, h3, span, p, button {
   padding: 0;
@@ -51,6 +58,7 @@ body {
   background-size: cover;
   min-height: 536px;
   padding-top: 32px;
+  padding-bottom: 30px;
 }
 
 .main-header::after {
@@ -67,7 +75,8 @@ body {
 @media (max-width: 640px) {
   .main-header {
     font-size: 8px;
-  }
+    padding-bottom: 30px;
+	}
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
@@ -76,7 +85,8 @@ body {
     min-height: 920px;
     padding-top: 40px;
     font-size: 18px;
-  }
+    padding-bottom: 30px;
+	}
 }
 
 @media (min-width: 961px) {
@@ -84,6 +94,7 @@ body {
     background-image: url(../img/football_1920.jpg);
     min-height: 915px;
     font-size: 26px;
+	padding-bottom: 30px;
   }
 }
 
@@ -208,6 +219,12 @@ body {
   height: 35px;
 }
 
+
+.download:hover {
+  background-color: #4c1bda;
+}
+
+
 @media (max-width: 640px) {
   .download {
     margin-right: auto;
@@ -232,6 +249,7 @@ body {
 
 .appstore {
   margin-bottom: 14px;
+
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
@@ -390,11 +408,13 @@ body {
   padding-left: 20px;
 }
 
+
 .section-title {
   font-size: 5em;
   font-weight: bold;
   color: #e7e7e7;
   text-transform: uppercase;
+  width: 400px;
 }
 
 .post {
@@ -426,7 +446,8 @@ body {
 
   .players .section-title {
     margin-bottom: 250px;
-  }
+  width: 400px;
+	}
 }
 
 @media (min-width: 641px) {
@@ -622,7 +643,7 @@ body {
 .number-find-contact::after,
 .number-work-it::after {
   background-color: #8f7bc8;
-  width: 24px;
+  width: 16px;
 }
 
 .post-collaboration {
@@ -823,7 +844,7 @@ body {
 
   .wrapper-be-active-text,
   .wrapper-work-it-text {
-    padding-left: 10.2%;
+    padding-left: 11.2%;
   }
 }
 
@@ -885,6 +906,8 @@ body {
   }
 }
 
+
+
 @media (min-width: 961px) {
   .wrapper-be-active-text,
   .wrapper-find-contact-text,
@@ -899,7 +922,7 @@ body {
   .wrapper-find-contact,
   .wrapper-work-it {
     position: relative;
-    width: 49vw;
+  	width: 50vw;  
   }
 
   .wrapper-be-active,
@@ -977,7 +1000,9 @@ body {
   margin-left: 20px;
   margin-top: -60px;
   font-size: 8px;
+align-items: center;
 }
+
 
 
 @media (min-width: 641px) and (max-width: 960px) {
@@ -1011,6 +1036,7 @@ body {
   .work-it {
     display: flex;
     font-size: 16px;
+	height: 600px;
   }
 
   .find-contact {
@@ -1020,7 +1046,7 @@ body {
   .wrapper-be-active-text,
   .wrapper-find-contact-text,
   .wrapper-work-it-text {
-    width: 50%;
+    width: 51%;
   }
 }
 
@@ -1036,7 +1062,7 @@ body {
 .number-find-contact,
 .number-work-it {
   margin: auto;
-  color: #f5f6f7;
+  color: #f5f6f7;	
 }
 
 @media (max-width: 640px) {
@@ -1171,6 +1197,7 @@ body {
   display: flex;
   width: 100%;
   margin: auto;
+align-items: center;
 }
 
 @media (max-width: 640px ) {
@@ -1232,6 +1259,7 @@ body {
 
   .footer-title {
     margin: 0;
+	  width: 680px;
   }
 
   .footer-tagline {
