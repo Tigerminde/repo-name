@@ -31,6 +31,7 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	outline: none;
+    display: block;
 }
 
 
@@ -309,7 +310,8 @@ body {
 }
 
 .content {
-  max-width: 1920px;
+  width: 100%;
+	max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -381,11 +383,12 @@ body {
 @media (min-width: 961px) {
   .athlets-section {
     top: 30px;
-    left: calc((100vw - 961px) * 0.391);
+    left: calc((100% - 961px) * 0.391);
   }
 
   .players-section {
-    right: calc((100vw - 961px) * 0.636 - 485px);
+    right: 0;
+        
     top: 30px;
   }
 }
@@ -443,7 +446,7 @@ body {
 
   .players .section-title {
     margin-bottom: 250px;
-  width: 400px;
+      width: 400px;
 	}
 }
 
@@ -598,7 +601,7 @@ body {
   }
 
   .number::after {
-    width: 25px;
+    width: 19px;
     height: 5px;
   }
 }
@@ -640,8 +643,13 @@ body {
 .number-find-contact::after,
 .number-work-it::after {
   background-color: #8f7bc8;
-  width: 16px;
+  width: 17px;
 }
+
+
+
+
+
 
 .post-collaboration {
   background-color: #f5f4f9;
@@ -836,12 +844,12 @@ body {
   }
 
   .wrapper-find-contact-text {
-    padding-left: 9.7%;
+    padding-left: 8.7%;
   }
 
   .wrapper-be-active-text,
   .wrapper-work-it-text {
-    padding-left: 11.2%;
+    padding-left: 7.2%;
   }
 }
 
@@ -912,7 +920,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 13px;
-    padding-top: 13.5%;
+    padding-top: 12.5%;
   }
 
   .wrapper-be-active,
