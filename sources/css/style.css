@@ -643,7 +643,7 @@ body {
 .number-find-contact::after,
 .number-work-it::after {
   background-color: #8f7bc8;
-  width: 17px;
+  width: 100%;
 }
 
 
@@ -844,12 +844,12 @@ body {
   }
 
   .wrapper-find-contact-text {
-    padding-left: 8.7%;
+    padding-left: 2.7%;
   }
 
   .wrapper-be-active-text,
   .wrapper-work-it-text {
-    padding-left: 7.2%;
+    padding-left: 8.2%;
   }
 }
 
@@ -891,7 +891,7 @@ body {
   }
 
   .find-contact-title {
-    width: 78%;
+    width: 80%;
   }
 
   .be-active_preview,
