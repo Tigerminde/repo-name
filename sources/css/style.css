@@ -414,7 +414,8 @@ body {
   font-weight: bold;
   color: #e7e7e7;
   text-transform: uppercase;
-  width: 400px;
+    width: 400px;
+  
 }
 
 .post {
@@ -844,7 +845,7 @@ body {
   }
 
   .wrapper-find-contact-text {
-    padding-left: 8.7%;
+    padding-left: 6.7%;
   }
 
   .wrapper-be-active-text,
@@ -887,11 +888,12 @@ body {
   .be-active-title,
   .find-contact-title,
   .work-it-title {
-    font-size: 6.2em;
+    font-size: 5.2em;
+      padding-left: 0px;
   }
 
   .find-contact-title {
-    width: 80%;
+    width: 90%;
   }
 
   .be-active_preview,
@@ -920,7 +922,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 13px;
-    padding-top: 10.5%;
+    padding-top: 9.5%;
   }
 
   .wrapper-be-active,
@@ -969,12 +971,12 @@ body {
   .text-find-contact {
     margin-top: 23px;
     margin-left: 5px;
-    margin-right: 0;
+    margin-right: 77px;
   }
 
   .text-be-active {
     margin-top: 60px;
-    width: 70%;
+    width: 74%;
   }
 
   .text-find-contact {
@@ -1052,6 +1054,7 @@ align-items: center;
   .wrapper-find-contact-text,
   .wrapper-work-it-text {
     width: 50%;
+      align-items: end;
   }
 }
 
